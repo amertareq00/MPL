@@ -15,5 +15,5 @@ def addproduct(request):
             return render(request, 'product.html', {'form': form})
     else:
         form = ProductForm()
-
+#
     return render(request, 'product.html', {'form': form})
