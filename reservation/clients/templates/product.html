@@ -1,8 +1,9 @@
 {% include 'header.html' %}
-
 <h1>Product Page</h1>
 <form method="post" action="{% url 'addproduct' %}">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Submit</button>
+</form>
+<p>Total Products Added: {{ product_count }}</p>
 </form>
